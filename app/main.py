@@ -18,7 +18,7 @@ def main():
             f.write("ref: refs/heads/main\n")
         print("Initialized git directory")
 
-    if command == "cat-file":
+    elif command == "cat-file":
         param = sys.argv[2]
         blob_sha = sys.argv[3] 
         if param == "-p":
